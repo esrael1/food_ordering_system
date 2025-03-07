@@ -1,10 +1,10 @@
 <?php
-// admin/dashboard.php
-//session_start();
-//if (!isset($_SESSION['admin_logged_in'])) {
-   // header('Location: login.php');
-   // exit();
-//}
+ admin/dashboard.php
+session_start();
+if (!isset($_SESSION['admin_logged_in'])) {
+    header('Location: login.php');
+    exit();
+}
 require '../db.php';
 
 $restaurantsResult = $conn->query("SELECT * FROM restaurants");
