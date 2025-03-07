@@ -46,7 +46,7 @@ $orderResult = $conn->query("SELECT * FROM orders");
             </tr>
         <?php endwhile; ?>
     </table>
-    
+
     <h2>All Orders</h2>
     <table class="table table-bordered">
         <tr><th>Order ID</th><th>Customer ID</th><th>Restaurant ID</th><th>Status</th><th>Total Price</th></tr>
